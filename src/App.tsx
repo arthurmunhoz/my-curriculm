@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import styled from 'styled-components';
+import Header from './components/header/Header';
+import InfoTabs from './components/infoTabs/InfoTabs';
 
-function App() {
+const StyledAppFrame = styled.div`
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  color: #f0f0f0;
+
+  * {
+    font-family: 'Tomorrow', sans-serif !important;
+    letter-spacing: 1px;
+  }
+
+  background: radial-gradient(circle at center top, #021d00, #000700);
+  /* background: radial-gradient(circle at center top, rgb(31, 55, 86), rgb(20, 21, 57)); */
+`;
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledAppFrame>
+      <Header />
+      <InfoTabs />
+    </StyledAppFrame>
   );
 }
 
