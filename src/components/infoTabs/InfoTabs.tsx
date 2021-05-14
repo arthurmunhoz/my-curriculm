@@ -1,4 +1,4 @@
-import { AppBar, Box, Tab, Tabs, Typography, useTheme } from '@material-ui/core';
+import { AppBar, Box, Tab, Tabs, Tooltip, Typography, useTheme } from '@material-ui/core';
 import React, { useState } from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import styled from 'styled-components';
@@ -34,6 +34,20 @@ const StyledTabs = styled.div`
     #full-width-tabpanel-1 ,
     #full-width-tabpanel-2 {
         height: calc(100vh - 294px);
+    }
+
+    #tech-stack-frame a {
+        margin-left: 8px;
+    }
+
+    @media screen and (max-width: 680px) {
+        height: calc(100% - 185px);
+
+        #full-width-tabpanel-0 ,
+        #full-width-tabpanel-1 ,
+        #full-width-tabpanel-2 {
+            height: calc(100vh - 235px);
+        }
     }
 `;
 
@@ -111,8 +125,33 @@ const InfoTabs = () => {
                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                             <Typography style={{ marginBottom: '12px' }}>{curriculum.about.title}</Typography>
                             <Typography style={{ marginBottom: '12px' }}>{curriculum.about['text-personal']}</Typography>
-                            <Typography style={{ marginBottom: '12px' }}>{curriculum.about['text-professional']}</Typography>
+                            <Typography style={{ marginBottom: '24px' }}>{curriculum.about['text-professional']}</Typography>
                         </div>
+
+                        {/* SEPARATOR LINE */}
+                        <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
+                        <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>MY FAVORITE TECH STACK:</Typography>
+
+                        <p id="tech-stack-frame">
+                            <Tooltip title="Typescript"><a href="https://www.typescriptlang.org/" ><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40" /></a></Tooltip>
+                            <Tooltip title="Javascript"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" ><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" /></a></Tooltip>
+                            <Tooltip title="ReactJs"><a href="https://reactjs.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="40px" height="40px"/></a></Tooltip>
+                            <Tooltip title="Redux"><a href="https://redux.js.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40px" height="40px"/> </a></Tooltip>
+                            <Tooltip title="HTML5"><a href="https://www.w3.org/html/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="CSS3"><a href="https://www.w3schools.com/css/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Bootstrap"><a href="https://getbootstrap.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Sass"><a href="https://getbootstrap.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Android"><a href="https://www.android.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" alt="android" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="GraphQL"><a href="https://graphql.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg" alt="graphql" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Linux"><a href="https://ubuntu.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Kotlin"><a href="https://kotlinlang.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="kotlin" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Git"><a href="https://git-scm.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Figma"><a href="https:www.figma.com//"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="figma" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Sketch"><a href="https://www.sketch.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sketch/sketch-original.svg" alt="sketch" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="NodeJS"><a href="https://nodejs.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Npm"><a href="https://www.npmjs.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg" alt="npm" width="40px" height="40px" /> </a></Tooltip>
+                            <Tooltip title="Yarn"><a href="https://yarnpkg.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/yarn/yarn-original.svg" alt="yarn" width="40px" height="40px" /> </a></Tooltip>
+                        </p>
                     </TabPanel>
 
                     {/* EDUCATION */}
@@ -130,6 +169,12 @@ const InfoTabs = () => {
                                     </section>
                                 })
                             }
+
+                            {/* SEPARATOR LINE */}
+                            <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} />
+
+                            <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>GITHUB:</Typography>
+                            <a href={curriculum.github} style={{ marginBottom: '16px' }}>{curriculum.github}</a>
 
                             {/* SEPARATOR LINE */}
                             <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} />
@@ -172,8 +217,11 @@ const InfoTabs = () => {
                     {/* EXPERIENCES */}
                     <TabPanel value={value} index={2} dir={theme.direction}>
                         <ExperienceItem img={KaffaLogo} exp={curriculum.experiences[0]} />
+                        <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
                         <ExperienceItem img={SamsungLogo} exp={curriculum.experiences[1]} />
+                        <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
                         <ExperienceItem img={HSTLogo} exp={curriculum.experiences[2]} />
+                        <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
                         <ExperienceItem img={HSTLogo} exp={curriculum.experiences[3]} />
                     </TabPanel>
                 </SwipeableViews>

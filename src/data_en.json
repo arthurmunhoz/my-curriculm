@@ -5,12 +5,12 @@
   "addressDetails": "Torre 1 Apto 26",
   "phone": "+55(19)97166-1346",
   "email": "arthurmunhoz@hotmail.com",
-  "linkedin": "https://www.linkedin.com/in/arthur-munhoz-199785137",
+  "linkedin": "https://www.linkedin.com/in/arthurmunhoz",
   "github": "https://github.com/arthurmunhoz",
   "about": {
     "title": "Hi, I'm Arthur!",
-    "text-personal": "Besides a frontend developer (obvious! =P) I consider myself a very dedicated, passionate and fun guy. I love to spend time with my family and friend, and I think there is no party that beats a good Sunday barbecue.",
-    "text-professional": "My love for programming continues to grow as I practice, and I really found myself in the UX/UI/Frontend areas. I think a perfect day of work for me when all these things happen: I learn; I share some knowledge; I get things done;"
+    "text-personal": "Besides a frontend developer (obvious! =P) I consider myself a very dedicated, passionate and fun guy. I love to spend time with my family and friends, and I think there is no party that beats a good Sunday barbecue.",
+    "text-professional": "My love for programming continues to grow as I practice, and I really found myself in the UX/UI/Frontend areas. I think a perfect day of work for me is when all these things happen: I learn, I share some knowledge, I get things done."
   },
   "languages": [
     {
@@ -31,16 +31,6 @@
       "institution": "Federal University of São Carlos (UFSCar)",
       "level": "Bachelor's degree in Computer Science",
       "location": "São Carlos - SP"
-    },
-    {
-      "institution": "Integral Alphaville",
-      "level": "High School",
-      "location": "Campinas - SP"
-    },
-    {
-      "institution": "Educap",
-      "level": "Middle School",
-      "location": "Campinas - SP"
     }
   ],
   "courses": [
@@ -68,39 +58,39 @@
   "experiences": [
     {
       "company": "Kaffa Mobile",
-      "companysWebsite": "www.kaffa.com.br",
+      "companysWebsite": "https://www.kaffa.com.br",
       "startDate": "20191114",
       "endDate": null,
       "position": "Frontend Developer",
       "responsabilities": "As a member of Product's team, I act both as a UX/UI analist and frontend developer (always giving a hand when needed in the backend), and my main responsabilities are participate in early discussions/braisntorms about a new project/feature, prototype screens with mockups (low and high fidelity) and implement the frontend.\nThe tech stack I've been involved in this role is: Prototyping happens in Figma, frontend for web happens with ReactJs (Typescript) and all it's best tools, and for the main product we use SWT; for the backend we focus in Kotlin.",
-      "technologies": ["ReactJs", "Figma", "HTML", "CSS", "Kotlin", "Java"]
+      "tags": ["ReactJS", "Figma", "HTML", "CSS", "Kotlin", "Java"]
     },
     {
-      "company": "Samsung",
-      "companysWebsite": "www.samsung.com",
+      "company": "Samsung Elet. da Amazônia",
+      "companysWebsite": "https://www.samsung.com",
       "startDate": "20190504",
       "endDate": "20191107",
       "position": "UX Analist",
       "responsabilities": "As an UX Analist I could dig a little deeper in a world which is totally connected with frontend development. I got to learn from an experienced team and participate in big projets, one of which got me a trip to South Korea to make a presentation at an UX Workshop at the Samsung's Head Quarters(Yey!!). With my background in Computer Science I could play an important part when presenting and discussing the team's work (majority of times screen flows) from a more techincal point of view with the developers' team also involved in the projects.",
-      "technologies": ["Sketch", "Android"]
+      "tags": ["Sketch", "Android", "Mockups"]
     },
     {
       "company": "HST Card Technology",
-      "companysWebsite": "www.hst.com.br",
+      "companysWebsite": "https://www.hst.com.br",
       "startDate": "20180608",
       "endDate": "20190419",
       "position": "Software Developer Jr",
-      "responsabilities": "As part of the Digital team (which was mainly involved in the development of a digital wallet), my responsabilities went from planning features and it's screens for the wallet to implementing the screens and APIs.\nThe tech stack which I was involved in this position was: a lot of native Android with Java (working with permissions, camera, gps, bluetooth, material design/third-party libraries/custom components for the layouts).",
-      "technologies": ["Android", "Java", "XML", "Figma", "Android Studio"]
+      "responsabilities": "As part of the Digital team (which was mainly involved in the development of a digital wallet), my responsabilities went from planning features and it's screens for the wallet to implementing the screens and APIs.\nThe tech stack which I was involved in this position was: a lot of native Android with Java and XML (working with permissions, camera, gps, bluetooth, material design/third-party libraries/custom components for the layouts) and Figma for prototyping.",
+      "tags": ["Android", "Retrofit2", "Picasso", "Custom components", "Mockups","Java", "XML", "Figma", "Android Studio"]
     },
     {
       "company": "HST Card Technology",
-      "companysWebsite": "www.hst.com.br",
+      "companysWebsite": "https://www.hst.com.br",
       "startDate": "20170306",
       "endDate": "20180608",
       "position": "Software Developer Intern & Trainee",
       "responsabilities": "As an Intern and member of Terminals' team, my job was to help in the development/improvement of features and drivers for ATM's and safe's applications. I've also worked with Android apps, communicating with PINPads via bluetooth.",
-      "technologies": ["C++", "HTML", "Apache Ant", "Makefiles", "Android"]
+      "tags": ["C++", "HTML", "CSS", "Apache Ant", "Makefiles", "Android"]
     }
   ]
 }

@@ -1,6 +1,9 @@
+import './App.css';
+
 import React from 'react';
-import './App.css'
+import { ToastContainer } from 'react-toastify';
 import styled from 'styled-components';
+
 import Header from './components/header/Header';
 import InfoTabs from './components/infoTabs/InfoTabs';
 
@@ -29,6 +32,7 @@ const App = () => {
 
   return (
     <StyledAppFrame>
+      <ToastContainer closeOnClick autoClose={2500} />
       <Header />
       <InfoTabs />
     </StyledAppFrame>
