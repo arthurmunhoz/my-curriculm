@@ -192,20 +192,20 @@ const Header = () => {
         <section className="info-section-frame">
 
           <section className="info-section-frame-top">
-            <section id="phone"  className="info-section" onClick={() => {
-                navigator.clipboard?.writeText(curriculum.phone);
-                toast("Phone number copied to the clipboard!");
-              }}>
+            <section id="phone" className="info-section" onClick={() => {
+              navigator.clipboard?.writeText(curriculum.phone);
+              toast("Phone number copied to the clipboard!");
+            }}>
               <PhoneIcon color="inherit" />
               <span >
                 {curriculum.phone}
               </span>
             </section>
-            <section id="email"  className="info-section">
+            <section id="email" className="info-section" onClick={() => {
+              window.open('mailto:arthurmunhoz@hotmail.com')
+            }}>
               <EmailIcon color="inherit" />
-              <span onClick={() => {
-                window.open('mailto:arthurmunhoz@hotmail.com')
-              }}>{curriculum.email}</span>
+              <span>{curriculum.email}</span>
             </section>
           </section>
 
