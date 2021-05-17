@@ -10,6 +10,7 @@ import SpainFlag from '../../res/images/spain.svg';
 import KaffaLogo from '../../res/images/kaffa-mobile.svg';
 import SamsungLogo from '../../res/images/samsung-logo.png';
 import HSTLogo from '../../res/images/hst-logo.png';
+import DisneyLogo from '../../res/images/walt-disney-logo.png';
 import ExperienceItem from '../experienceItem/ExperienceItem';
 
 const StyledTabs = styled.div`
@@ -223,6 +224,8 @@ const InfoTabs = () => {
                         <ExperienceItem img={HSTLogo} exp={curriculum.experiences[2]} />
                         <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
                         <ExperienceItem img={HSTLogo} exp={curriculum.experiences[3]} />
+                        <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
+                        <ExperienceItem img={DisneyLogo} exp={curriculum.experiences[4]} />
                     </TabPanel>
                 </SwipeableViews>
             </div>

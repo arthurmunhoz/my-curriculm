@@ -91,6 +91,15 @@
       "position": "Software Developer Intern & Trainee",
       "responsabilities": "As an Intern and member of Terminals' team, my job was to help in the development/improvement of features and drivers for ATM's and safe's applications. I've also worked with Android apps, communicating with PINPads via bluetooth.",
       "tags": ["C++", "HTML", "CSS", "Apache Ant", "Makefiles", "Android"]
+    },
+    {
+      "company": "Walt Disney",
+      "companysWebsite": "https://www.disney.com",
+      "startDate": "20111114",
+      "endDate": "20120220",
+      "position": "Operations and Attractions",
+      "responsabilities": "As a member of the Hollywood Studio's Operations and Attractions team, I was responsable for assisting the operations at some of the park's theaters and events in general (like the parades!). Some of my responsabilities involved activities from walking around the park greeting and helping guests, to help organizing the theaters prior to the shows (checking benches, emergency exits, bathrooms, etc...), make sure the guests were ok during the shows and help to clean afterwards.",
+      "tags": ["Operations Assist", "Crowd Control", "Guest Greeting"]
     }
   ]
 }
