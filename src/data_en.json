@@ -7,10 +7,29 @@
   "email": "arthurmunhoz@hotmail.com",
   "linkedin": "https://www.linkedin.com/in/arthurmunhoz",
   "github": "https://github.com/arthurmunhoz",
+  "githubProjects": [
+    {
+      "name": "Rock Paper Scissors (React)",
+      "link": "https://arm-rock-paper-scissor.netlify.app/"
+    },
+    {
+      "name": "Where in the world? (React)",
+      "link": "https://countries-arm.netlify.app/"
+    },
+    {
+      "name": "Famous Movies (Android)",
+      "link": "https://github.com/arthurmunhoz/FamousMovies"
+    },
+    {
+      "name": "My Curriculum (React)",
+      "link": "http://arthur-munhoz-resume.netlify.app/"
+    }
+  ],
   "about": {
     "title": "Hi, I'm Arthur!",
-    "text-personal": "Besides a frontend developer (obvious! =P) I consider myself a very dedicated, passionate and fun guy. I love to spend time with my family and friends, and I think there is no party that beats a good Sunday barbecue.",
-    "text-professional": "I'm now with over 5 year of programming experience and my love for it continues to grow as I practice, and I really found myself in the UX/UI/Frontend areas. I think a perfect day of work for me is when all these things happen: I learn, I share some knowledge, I get things done."
+    "text-personal": "Besides a frontend developer (obvious! =P), I consider myself a very dedicated, passionate and fun guy. I love to spend time with my family and friends, and I think there is no party that beats a good Sunday barbecue.",
+    "text-professional": "I'm now with over 5 year of programming experience and my love for it continues to grow as I practice, and I really found myself in the UX/UI/Frontend areas. I think a perfect day of work for me is when all these things happen: I learn, I share and I get something cool done.",
+    "text-fav-tech": "Even though I've had contact with Android development for more time, the technology that I'm most passionate about is ReactJS with Typescript, which is the one I'm currently working on a daily baisis. I'm focusing on getting better each day and trying to master all React's best tools, such as Redux, Hooks, ContextAPI, Styled Components, Material UI, Router, High Order Components, and etc..."
   },
   "languages": [
     {
@@ -62,7 +81,7 @@
       "startDate": "20191114",
       "endDate": null,
       "position": "Frontend Developer",
-      "responsabilities": "As a member of Product's team, I act both as a UX/UI analist and frontend developer (always giving a hand when needed in the backend), and my main responsabilities are participate in early discussions/braisntorms about a new project/feature, prototype screens with mockups (low and high fidelity) and implement the frontend.\nThe tech stack I've been involved in this role is: Prototyping happens in Figma, frontend for web happens with ReactJs (Typescript) and all it's best tools, and for the main product we use SWT; for the backend we focus in Kotlin.",
+      "responsabilities": "As a member of Product's team, I act both as a UX/UI analist and frontend developer (always giving a hand when needed in the backend), and my main responsabilities are participate in early discussions/braisntorms about a new project/feature, prototype screens with mockups (low and high fidelity) and implement the frontend.\nThe technology that I've been in most contact with during this position is ReactJS + Typecript, which I fell in love with and already built some cool applications using all Reacts' best tools: Redux, Router, Hooks, Styled Components, Maps (Google Maps and Open Street Maps), ContextAPI, High Order Components and etc...",
       "tags": ["ReactJS", "Figma", "HTML", "CSS", "Kotlin", "Java"]
     },
     {

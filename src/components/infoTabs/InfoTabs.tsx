@@ -11,7 +11,15 @@ import KaffaLogo from '../../res/images/kaffa-mobile.svg';
 import SamsungLogo from '../../res/images/samsung-logo.png';
 import HSTLogo from '../../res/images/hst-logo.png';
 import DisneyLogo from '../../res/images/walt-disney-logo.png';
+import RockPaperScissors1 from '../../res/images/rps1.jpeg';
+import RockPaperScissors2 from '../../res/images/rps2.jpeg';
+import MoviesList from '../../res/images/moviesList.jpeg';
+import MoviesDetailsTop from '../../res/images/moviesDetailsTop.jpeg';
+import MoviesDetailsBottom from '../../res/images/moviesDetailsBottom.jpeg';
+import CountriesList from '../../res/images/countriesList.jpeg';
+import CountryDetails from '../../res/images/countryDetails.jpeg';
 import ExperienceItem from '../experienceItem/ExperienceItem';
+import ProjectItem from '../ProjectItem';
 
 const StyledTabs = styled.div`
     height: calc(100% - 245px);
@@ -41,6 +49,11 @@ const StyledTabs = styled.div`
         margin-left: 8px;
     }
 
+    #projects-frame {
+        display: flex;
+        flex-direction: row;
+    }
+
     @media screen and (max-width: 680px) {
         height: calc(100% - 185px);
 
@@ -48,6 +61,10 @@ const StyledTabs = styled.div`
         #full-width-tabpanel-1 ,
         #full-width-tabpanel-2 {
             height: calc(100vh - 235px);
+        }
+
+        #projects-frame {
+            flex-direction: column;
         }
     }
 `;
@@ -127,6 +144,7 @@ const InfoTabs = () => {
                             <Typography style={{ marginBottom: '12px' }}>{curriculum.about.title}</Typography>
                             <Typography style={{ marginBottom: '12px' }}>{curriculum.about['text-personal']}</Typography>
                             <Typography style={{ marginBottom: '24px' }}>{curriculum.about['text-professional']}</Typography>
+                            <Typography style={{ marginBottom: '24px' }}>{curriculum.about['text-fav-tech']}</Typography>
                         </div>
 
                         {/* SEPARATOR LINE */}
@@ -136,8 +154,8 @@ const InfoTabs = () => {
                         <p id="tech-stack-frame">
                             <Tooltip title="Typescript"><a href="https://www.typescriptlang.org/" ><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40" /></a></Tooltip>
                             <Tooltip title="Javascript"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" ><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" /></a></Tooltip>
-                            <Tooltip title="ReactJs"><a href="https://reactjs.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="40px" height="40px"/></a></Tooltip>
-                            <Tooltip title="Redux"><a href="https://redux.js.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40px" height="40px"/> </a></Tooltip>
+                            <Tooltip title="ReactJs"><a href="https://reactjs.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="40px" height="40px" /></a></Tooltip>
+                            <Tooltip title="Redux"><a href="https://redux.js.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40px" height="40px" /> </a></Tooltip>
                             <Tooltip title="HTML5"><a href="https://www.w3.org/html/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40px" height="40px" /> </a></Tooltip>
                             <Tooltip title="CSS3"><a href="https://www.w3schools.com/css/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40px" height="40px" /> </a></Tooltip>
                             <Tooltip title="Bootstrap"><a href="https://getbootstrap.com"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40px" height="40px" /> </a></Tooltip>
@@ -174,8 +192,25 @@ const InfoTabs = () => {
                             {/* SEPARATOR LINE */}
                             <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} />
 
-                            <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>GITHUB:</Typography>
-                            <a href={curriculum.github} style={{ marginBottom: '16px' }}>{curriculum.github}</a>
+                            <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>SOME OF MY GITHUB PROJECTS:</Typography>
+                            <section id="projects-frame">
+                                <ProjectItem
+                                    name={curriculum.githubProjects[0].name}
+                                    link={curriculum.githubProjects[0].link}
+                                    imgs={[RockPaperScissors1, RockPaperScissors2]}
+                                />
+                                <ProjectItem
+                                    name={curriculum.githubProjects[1].name}
+                                    link={curriculum.githubProjects[1].link}
+                                    imgs={[CountriesList, CountryDetails]}
+                                />
+                                <ProjectItem
+                                    name={curriculum.githubProjects[2].name}
+                                    link={curriculum.githubProjects[2].link}
+                                    imgs={[MoviesList, MoviesDetailsTop, MoviesDetailsBottom]}
+                                />
+                            </section>
+                            {/* <a href={curriculum.github} style={{ marginBottom: '16px' }}>{curriculum.github}</a> */}
 
                             {/* SEPARATOR LINE */}
                             <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} />
@@ -192,7 +227,6 @@ const InfoTabs = () => {
                                     </section>
                                 })
                             }
-
 
                             {/* SEPARATOR LINE */}
                             <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} />
