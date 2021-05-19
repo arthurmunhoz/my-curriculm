@@ -5,22 +5,26 @@ import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PhoneIcon from '@material-ui/icons/Phone';
-import moment from 'moment';
+// import moment from 'moment';
 import curriculum from '../../data_en.json';
 import { toast } from "react-toastify";
 
 const StyledHeader = styled.div`
   height: fit-content;
-  min-width: 100%;
+  width: calc(100% - 35px);
   
   display: flex;
-  margin: 1.3rem 1.3rem 0 1.3rem;
+  flex-grow: 1;
+  margin-top: 1.3rem;
+  margin-left: 1rem;
+  margin-right: 128rem;
 
   img {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
     margin-right: 24px;
+    margin-left: 6px;
     object-fit: contain;
     padding: 4px;
     background-color: white;
@@ -28,6 +32,11 @@ const StyledHeader = styled.div`
 
   h2 {
     margin: 0px 0px 10px 0px;
+    font-size: 1.2rem;
+  }
+
+  #description {
+    font-size: 0.8rem;
   }
 
   .info-holder {
@@ -46,12 +55,11 @@ const StyledHeader = styled.div`
   .info-section-frame-bottom {
     display: flex;
     flex-direction: row;
-    margin-bottom: 12px;
+    margin-top: 12px;
   }
 
   .info-section {
     display: flex; 
-    margin-top: 12px;
     margin-right: 30px;
     align-items: center;
   }
@@ -76,7 +84,7 @@ const StyledHeader = styled.div`
 
   #linkedin {
     margin-top: 2px;
-    font-size: 2.55rem !important;
+    font-size: 2rem !important;
     :hover {
       background-color: rgba(255, 255, 255, 0.596);
       border-radius: 4px;
@@ -85,8 +93,9 @@ const StyledHeader = styled.div`
   }
 
   #github {
-    font-size: 2.08rem !important;
+    font-size: 1.7rem !important;
     padding: 5px;
+    margin-top: -2px;
     :hover {
       background-color: rgba(255, 255, 255, 0.596);
       border-radius: 50%;
@@ -96,7 +105,7 @@ const StyledHeader = styled.div`
 
   #phone, #email {
     svg {
-      width: 33px;
+      width: 22px;
       margin-left: 1px;
     }
   }
@@ -138,14 +147,14 @@ const StyledHeader = styled.div`
     #linkedin {
       height: 27px;   
       width: 27px;
-      margin-top: 14px;
+      margin-top: 6px;
       margin-left: 4px;
     } 
     
     #github {
       height: 22px;   
       width: 22px;   
-      margin-top: 10px;
+      margin-top: 2px;
       margin-left: 16px;
       :hover {
         background-color: rgba(255, 255, 255, 0.596);
@@ -185,7 +194,8 @@ const Header = () => {
       <img src={ProfilePicture} alt='Profile' />
       <div className="info-holder">
         <h2>{"Arthur Regatieri Munhoz"}</h2>
-        <span>Frontend Developer, {moment(curriculum.birthday, 'YYYYMMDD').fromNow().replace('ago', 'old')}</span>
+        <span id="description">Frontend Developer</span>
+        {/* <span id="description">Frontend Developer, {moment(curriculum.birthday, 'YYYYMMDD').fromNow().replace('ago', 'old')}</span> */}
 
         <span id="separator" />
 

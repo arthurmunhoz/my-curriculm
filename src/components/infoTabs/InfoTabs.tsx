@@ -22,11 +22,11 @@ import ExperienceItem from '../experienceItem/ExperienceItem';
 import ProjectItem from '../ProjectItem';
 
 const StyledTabs = styled.div`
-    height: calc(100% - 245px);
-
+    height: calc(100% - 220px);
+    width: calc(100% - 55px);
     display: flex;
 
-    margin: 0px 1.3rem 1.3rem 1.3rem;
+    margin: 0px 1rem 1rem 1rem;
     padding: 12px;
 
     background-color: rgba(255, 250, 240, 0.11);
@@ -42,7 +42,7 @@ const StyledTabs = styled.div`
     #full-width-tabpanel-0 ,
     #full-width-tabpanel-1 ,
     #full-width-tabpanel-2 {
-        height: calc(100vh - 294px);
+        height: calc(100vh - 268px);
     }
 
     #tech-stack-frame a {

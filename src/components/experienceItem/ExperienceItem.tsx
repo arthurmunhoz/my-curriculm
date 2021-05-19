@@ -43,10 +43,12 @@ const StyledExperienceItem = styled.div`
     }
 
     #label {
-        font-size: 0.85rem; 
+        font-size: 0.85rem;
+        /* font-weight: bold; */
         margin-top: 2px;
-        color: #a5a5a5;
+        color: #aaaaaa;
         margin-bottom: auto;
+        white-space: nowrap;
     }
 
     #description {
@@ -55,16 +57,51 @@ const StyledExperienceItem = styled.div`
         opacity: 0.8;
     }
 
-    #responsabilities-frame {
+    #responsabilities-frame, #tech-frame {
         display: flex; 
         align-items: center; 
         margin-top: 8px;
     }
-    
+
+    #tech-frame {
+        margin-top: 12px;
+    }
+
+    #chips-frame {
+        width: fit-content;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+
+    .chip {
+        height: fit-content;
+        width: fit-content;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 3px 10px;
+
+        border: solid;
+        border-radius: 18px;
+        border-color: rgb(201, 201, 201);
+        border-width: 1px;
+    }
+
+    .chip-text {
+        font-size: 0.85rem;
+    }
 
     @media screen and (max-width: 680px) {
 
-        .header, #responsabilities-frame {
+        .chip {
+            margin-left: 0;
+            margin-bottom: 0;
+            margin-right: 6px;
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        .header, #responsabilities-frame, #tech-frame {
             flex-direction: column;
             align-items: flex-start;
         }
@@ -138,6 +175,22 @@ const ExperienceItem = (props: { img: string, exp: any }) => {
                     {props.exp.responsabilities}
                 </Typography>
             </div>
+
+            {/* TECH STACK */}
+            <div id="tech-frame">
+                <Typography id="label">Tech stack:</Typography>
+                <div id="chips-frame">
+                    {
+                        props.exp.tags.map((item: string) => {
+                            return <div className="chip">
+                                <Typography className="chip-text">{item}</Typography>
+                            </div>
+                        })
+                    }
+                </div>
+            </div>
+
+
         </StyledExperienceItem>
     );
 }
