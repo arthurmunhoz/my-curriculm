@@ -10,6 +10,7 @@ import SpainFlag from '../../res/images/spain.svg';
 import KaffaLogo from '../../res/images/kaffa-mobile.svg';
 import SamsungLogo from '../../res/images/samsung-logo.png';
 import HSTLogo from '../../res/images/hst-logo.png';
+import DootaxLogo from '../../res/images/dootax-logo.png';
 import DisneyLogo from '../../res/images/walt-disney-logo.png';
 import RockPaperScissors1 from '../../res/images/rps1.jpeg';
 import RockPaperScissors2 from '../../res/images/rps2.jpeg';
@@ -116,6 +117,8 @@ const InfoTabs = () => {
         setValue(index);
     };
 
+    const logos = [ DootaxLogo, KaffaLogo, SamsungLogo, HSTLogo, HSTLogo, DisneyLogo ];
+
     return (
         <StyledTabs>
             <div id="tabs-background">
@@ -213,10 +216,10 @@ const InfoTabs = () => {
                             {/* <a href={curriculum.github} style={{ marginBottom: '16px' }}>{curriculum.github}</a> */}
 
                             {/* SEPARATOR LINE */}
-                            <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} />
+                            {/* <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} /> */}
 
-                            <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>COURSES:</Typography>
-                            {
+                            {/* <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>COURSES:</Typography> */}
+                            {/* {
                                 curriculum.courses.map(course => {
                                     return <section style={{ marginBottom: '20px' }}>
                                         <div style={{ display: 'flex' }}>
@@ -226,7 +229,7 @@ const InfoTabs = () => {
                                         <div style={{ fontSize: '0.8rem', marginLeft: '32px', marginTop: '2px', color: '#3f3f3f' }}>{course.name}</div>
                                     </section>
                                 })
-                            }
+                            } */}
 
                             {/* SEPARATOR LINE */}
                             <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} />
@@ -251,15 +254,12 @@ const InfoTabs = () => {
 
                     {/* EXPERIENCES */}
                     <TabPanel value={value} index={2} dir={theme.direction}>
-                        <ExperienceItem img={KaffaLogo} exp={curriculum.experiences[0]} />
-                        <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
-                        <ExperienceItem img={SamsungLogo} exp={curriculum.experiences[1]} />
-                        <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
-                        <ExperienceItem img={HSTLogo} exp={curriculum.experiences[2]} />
-                        <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
-                        <ExperienceItem img={HSTLogo} exp={curriculum.experiences[3]} />
-                        <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
-                        <ExperienceItem img={DisneyLogo} exp={curriculum.experiences[4]} />
+                        {
+                            curriculum.experiences.map((experience, index) => <>
+                                <ExperienceItem img={logos[index]} exp={experience} />
+                                <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '24px' }} />
+                            </>)
+                        }
                     </TabPanel>
                 </SwipeableViews>
             </div>

@@ -26,9 +26,9 @@
     }
   ],
   "about": {
-    "title": "Hi, I'm Arthur!",
-    "text-personal": "Besides a frontend developer (obvious! =P), I consider myself a very dedicated, passionate and fun guy. I love to spend time with my family and friends, and I think there is no party that beats a good Sunday barbecue.",
-    "text-professional": "I'm now with over 5 year of programming experience and my love for it continues to grow as I practice, and I really found myself in the UX/UI/Frontend areas. I think a perfect day of work for me is when all these things happen: I learn, I share and I get something cool done.",
+    "title": "",
+    "text-personal": "On a short note about me, I consider myself a very dedicated, passionate and fun guy. I love to spend time with my family and friends, and I think there is no party that beats a good Sunday barbecue.",
+    "text-professional": "Professionally, I'm now with over 5 year of programming experience and my love for it continues to grow as I practice. Over this time I've had contact with many technologies, going from C++ and Makefiles when working with safes and ATMs, to prototyping and developing a digital wallet in Android, to making beautiful web applications in React, which is where I really found myself.",
     "text-fav-tech": "Even though I've had contact with Android development for more time, the technology that I'm most passionate about is ReactJS with Typescript, which is the one I'm currently working on a daily baisis. I'm focusing on getting better each day and trying to master all React's best tools, such as Redux, Hooks, ContextAPI, Styled Components, Material UI, Router, High Order Components, and etc..."
   },
   "languages": [
@@ -76,13 +76,22 @@
   ],
   "experiences": [
     {
+      "company": "Dootax",
+      "companysWebsite": "https://www.dootax.com.br",
+      "startDate": "20210628",
+      "endDate": null,
+      "position": "Frontend Developer",
+      "responsabilities": "As the only frontend developer in the company, my main responsability it to care of any improvements or addition of new features to Dootax's web application (built in AngularJS), which is the one clients are in touch everyday; Part of my job is also interacting with differents teams such as Marketing and UX, to gather relevant information and transform them into improvements to the app. My biggest challenge in the company is to reprogram the outdated web application made with AngularJs, but this time in ReactJs, using all its best tools.",
+      "tags": ["ReactJS", "Typescript", "Redux", "Thunk", "AngularJS", "Javascript", "HTML", "CSS", "Bootstrap", "Java", "Figma"]
+    },
+    {
       "company": "Kaffa Mobile",
       "companysWebsite": "https://www.kaffa.com.br",
       "startDate": "20191114",
-      "endDate": null,
+      "endDate": 20210618,
       "position": "Frontend Developer",
       "responsabilities": "As a member of Product's team, I act both as a UX/UI analist and frontend developer (always giving a hand when needed in the backend), and my main responsabilities are participate in early discussions/braisntorms about a new project/feature, prototype screens with mockups (low and high fidelity) and implement the frontend.\nThe technology that I've been in most contact with during this position is ReactJS + Typecript, which I fell in love with and already built some cool applications using all Reacts' best tools: Redux, Router, Hooks, Styled Components, Maps (Google Maps and Open Street Maps), ContextAPI, High Order Components and etc...",
-      "tags": ["ReactJS", "Figma", "HTML", "CSS", "Kotlin", "Java"]
+      "tags": ["ReactJS", "Typescript", "Redux", "Thunk", "Figma", "HTML", "CSS", "Kotlin", "Java"]
     },
     {
       "company": "Samsung Elet. da Amazônia",
