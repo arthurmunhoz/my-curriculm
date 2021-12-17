@@ -28,8 +28,8 @@
   "about": {
     "title": "",
     "text-personal": "On a short note about me, I consider myself a very dedicated, passionate and fun guy. I love to spend time with my family and friends, and I think there is no party that beats a good Sunday barbecue.",
-    "text-professional": "Professionally, I'm now with over 5 year of programming experience and my love for it continues to grow as I practice. Over this time I've had contact with many technologies, going from C++ and Makefiles when working with safes and ATMs, to prototyping and developing a digital wallet in Android, to making beautiful web applications in React, which is where I really found myself.",
-    "text-fav-tech": "Even though I've had contact with Android development for more time, the technology that I'm most passionate about is ReactJS with Typescript, which is the one I'm currently working on a daily baisis. I'm focusing on getting better each day and trying to master all React's best tools, such as Redux, Hooks, ContextAPI, Styled Components, Material UI, Router, High Order Components, and etc..."
+    "text-professional": "Professionally, I'm now with over 5 year of development experience and my love for it continues to grow as I practice. Over this time I've had contact with many technologies, starting with C++ when working with safes and ATMs, to prototyping and developing a digital wallet for Android with Java, to making beautiful web applications in ReactJS.",
+    "text-fav-tech": "For most of my carrier I've also performed the role of UX Analyst, leading the creation process of many features and applications with deliverables such as mocked screens and/or functional high fidelity prototypes in Figma."
   },
   "languages": [
     {

@@ -117,7 +117,7 @@ const InfoTabs = () => {
         setValue(index);
     };
 
-    const logos = [ DootaxLogo, KaffaLogo, SamsungLogo, HSTLogo, HSTLogo, DisneyLogo ];
+    const logos = [DootaxLogo, KaffaLogo, SamsungLogo, HSTLogo, HSTLogo, DisneyLogo];
 
     return (
         <StyledTabs>
@@ -195,7 +195,26 @@ const InfoTabs = () => {
                             {/* SEPARATOR LINE */}
                             <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} />
 
-                            <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>SOME OF MY GITHUB PROJECTS:</Typography>
+                            {/* LANGUAGES */}
+                            <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>LANGUAGES:</Typography>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <img style={{ height: '30px', marginRight: '6px' }} src={BrazilFlag} alt="brazil-flag" />
+                                {curriculum.languages[0].name} {`(${curriculum.languages[0].proficiency})`}
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <img style={{ height: '30px', marginRight: '6px' }} src={USAFlag} alt="brazil-flag" />
+                                {curriculum.languages[1].name} {`(${curriculum.languages[1].proficiency})`}
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <img style={{ height: '30px', marginRight: '6px' }} src={SpainFlag} alt="brazil-flag" />
+                                {curriculum.languages[2].name} {`(${curriculum.languages[2].proficiency})`}
+                            </div>
+
+                            {/* SEPARATOR LINE */}
+                            <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', margin: '16px 0' }} />
+
+                            {/* GITHUB PROJECTS */}
+                            <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>SOME OF MY PROJECTS:</Typography>
                             <section id="projects-frame">
                                 <ProjectItem
                                     name={curriculum.githubProjects[0].name}
@@ -213,42 +232,6 @@ const InfoTabs = () => {
                                     imgs={[MoviesList, MoviesDetailsTop, MoviesDetailsBottom]}
                                 />
                             </section>
-                            {/* <a href={curriculum.github} style={{ marginBottom: '16px' }}>{curriculum.github}</a> */}
-
-                            {/* SEPARATOR LINE */}
-                            {/* <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} /> */}
-
-                            {/* <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>COURSES:</Typography> */}
-                            {/* {
-                                curriculum.courses.map(course => {
-                                    return <section style={{ marginBottom: '20px' }}>
-                                        <div style={{ display: 'flex' }}>
-                                            <SchoolIcon fontSize='default' />
-                                            <div style={{ marginLeft: '6px', color: '#000' }}>{course.company}</div>
-                                        </div>
-                                        <div style={{ fontSize: '0.8rem', marginLeft: '32px', marginTop: '2px', color: '#3f3f3f' }}>{course.name}</div>
-                                    </section>
-                                })
-                            } */}
-
-                            {/* SEPARATOR LINE */}
-                            <div style={{ height: '1px', width: '100%', backgroundColor: '#d8d8d8', marginBottom: '16px' }} />
-
-                            {/* LANGUAGES */}
-                            <Typography style={{ marginBottom: '12px', fontSize: '0.8rem', fontWeight: 'bold' }}>LANGUAGES:</Typography>
-                            <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <img style={{ height: '30px', marginRight: '6px' }} src={BrazilFlag} alt="brazil-flag" />
-                                {curriculum.languages[0].name} {`(${curriculum.languages[0].proficiency})`}
-                            </div>
-                            <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <img style={{ height: '30px', marginRight: '6px' }} src={USAFlag} alt="brazil-flag" />
-                                {curriculum.languages[1].name} {`(${curriculum.languages[1].proficiency})`}
-                            </div>
-                            <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <img style={{ height: '30px', marginRight: '6px' }} src={SpainFlag} alt="brazil-flag" />
-                                {curriculum.languages[2].name} {`(${curriculum.languages[2].proficiency})`}
-                            </div>
-
                         </div>
                     </TabPanel>
 
